@@ -1,2 +1,2 @@
 # LeetCodeJ
-this project is for learning algorithm ! for salary !! for feature!!! 
+study hard !work hard ! In order to happiness ！！
