@@ -1,2 +1,2 @@
 # LeetCodeJ
-this project is for learning leetcode ! for salary !! for feature!!! 
+this project is for learning algorithm ! for salary !! for feature!!! 
