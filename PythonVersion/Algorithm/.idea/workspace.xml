@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Easy/Arrar03.py" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c882f89a-e6e9-4870-a5cf-947f08eab8c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c882f89a-e6e9-4870-a5cf-947f08eab8c2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Easy/Array06.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -76,6 +74,15 @@
               <folding>
                 <element signature="e#198#216#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Easy/Array09.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -112,6 +119,7 @@
         <option value="$PROJECT_DIR$/Easy/array04.py" />
         <option value="$PROJECT_DIR$/Easy/Array05.py" />
         <option value="$PROJECT_DIR$/Easy/Array06.py" />
+        <option value="$PROJECT_DIR$/Easy/Array09.py" />
       </list>
     </option>
   </component>
@@ -135,6 +143,11 @@
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Easy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +317,7 @@
       <workItem from="1565922244822" duration="3387000" />
       <workItem from="1566181405078" duration="5850000" />
       <workItem from="1566301252537" duration="6000" />
-      <workItem from="1566301263729" duration="2566000" />
+      <workItem from="1566301263729" duration="2915000" />
     </task>
     <task id="LOCAL-00001" summary="update Array04 &#10;add Array05">
       <created>1565871719485</created>
@@ -324,18 +337,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86993000" />
+    <option name="totallyTimeSpent" value="87342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907662" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907662" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -418,6 +431,13 @@
           <folding>
             <element signature="e#198#216#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Easy/Array09.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
