@@ -9,4 +9,19 @@ function:
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
 '''
+from typing import List
 
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        map = dict()
+        k = len(nums)
+        for i in range(0, k):  # 一边将列表中的数添加到字典中，一边判断两数之差是否存在于字典中
+            temp = target - nums[i]
+            if temp in map:  # 判断步骤
+                return [map[temp], i]
+            map[nums[i]] = i  # 添加步骤（切记先判断再添加，以免key冲突）
+
+obj=Solution()
+answer=obj.twoSum([3,3],6)
+print(answer)
