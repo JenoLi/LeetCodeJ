@@ -1,4 +1,4 @@
-package _7
+package N27
 //原地删除(27)
 
 import "fmt"

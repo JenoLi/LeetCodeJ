@@ -1,8 +1,7 @@
 package main
 
 import (
-	//"Array/350"
-	"Array/27"
+	"Array/N27"
 	"fmt"
 )
 
@@ -17,7 +16,7 @@ func main() {
 
 	//27 ---------------
 	n1 := []int{0,1,2,2,3,0,4,2}
-	res := _7.RemoveElement(n1, 2)
+	res := N27.RemoveElement(n1, 2)
 	printSlice(res)
 }
 

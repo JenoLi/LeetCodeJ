@@ -1,4 +1,4 @@
-package _50
+package N350
 
 //GO
 //两数组交集 350
