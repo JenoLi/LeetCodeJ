@@ -13,32 +13,9 @@ namespace First
             // Console.WriteLine(b);
             // Console.ReadKey();
             // int[][] a = new int[2][2] {{2, 9}, {1, 10}};
-            int[][] a = {new int[]{2,9}, new int[]{1, 10}};
-            MinMeetingRooms(a);
-        }
-
-        public static int MinMeetingRooms(int[][] intervals)
-        {
-            Array.Sort(intervals,new MyComparable());
-            foreach (int[] i in intervals)
-            {
-                Console.WriteLine(i[0]+","+i[1]);
-                // foreach (int i1 in i)
-                // {
-                //     Console.WriteLine(i1);
-                // }
-            }
-            Console.ReadKey();
-            return 1;
-        }
-        public class MyComparable:IComparer<int[]>
-        {
-            public  int Compare(int[] x, int[] y)
-            {
-                return x[0] - y[0];//返回值大于0表示x>y,等于0表示x=y,小于0表示x<y。Array.Sort内部会根据这个返回值来判断x和y的大小关系，并把小的元素放在前面
-                //如果想降序怎么办，返回y[0]-x[0]即可
-            }
-
+            // int[][] a = {new int[]{0,30}, new int[]{5,10}, new int[]{15,20}};
+            int[][] a = {new int[]{13,15}, new int[]{1,13}};
+            Console.WriteLine(N253.MinMeetingRooms(a));
         }
     }
 
