@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N144TreeNode.cs" />
     <Compile Include="N253.cs" />
+    <Compile Include="N492.cs" />
     <Compile Include="N545.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
