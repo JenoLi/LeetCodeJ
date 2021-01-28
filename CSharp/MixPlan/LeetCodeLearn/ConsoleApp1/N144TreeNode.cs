@@ -19,36 +19,33 @@ namespace First
  * }
  */
         
-        //迭代
+        //迭代，前序中左右，用栈存储，所以输入顺序为右左中 输出为中左右
         public IList<int> PreorderTraversal(TreeNode root)
         {
             List<int> result=new List<int>();
             Stack<TreeNode> st=new Stack<TreeNode>();
 
-            if(root!=null) st.Push(root);//根
+            if(root!=null) st.Push(root);
             
             while (st.Count>0)
             {
                 TreeNode node = st.Peek();
                 if (node != null)
                 {
-                    st.Pop();
-                    if(node.right!=null) st.Push(node.right);
-                    if(node.left!=null) st.Push(node.left);
-                    st.Push(node);
+                    st.Pop();// 将该节点弹出，避免重复操作
+                    if(node.right!=null) st.Push(node.right);// 添加右节点（空节点不入栈）
+                    if(node.left!=null) st.Push(node.left);// 添加左节点（空节点不入栈）
+                    st.Push(node);// 添加中节点
                     st.Push(null);
                 }
                 else
                 {
-                    st.Pop();
+                    st.Pop();//去除null
                     node = st.Pop();
-                    st.Pop();
                     result.Add(node.val);
                 }
             }
-            
             return result;
-
         }
         
         
@@ -78,19 +75,5 @@ namespace First
         //     // Traversal(cur.right,list);//右
         //     // list.Add(cur.val);//中
         // }
-
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-            {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
     }
 }
