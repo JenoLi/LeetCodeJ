@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace First
 {
@@ -27,12 +25,22 @@ namespace First
             TreeNode n2=new TreeNode(6,null,null);
             TreeNode n0=new TreeNode(5,n1,n2);
 
-            N144TreeNode n144TreeNode= new N144TreeNode();
-            List<int> res= (List<int>)n144TreeNode.PreorderTraversal(n0);
-            foreach (int i in res)
-            {
-                Console.WriteLine(i);
-            }
+            //144
+            // N144TreeNode n144TreeNode= new N144TreeNode();
+            // List<int> res= (List<int>)n144TreeNode.PreorderTraversal(n0);
+            
+            // N107 n107=new N107();
+            // List<IList<int>> res = (List<IList<int>>) n107.LevelOrderBottom(n0);
+            
+            // foreach (List<int> i in res)
+            // {
+            //     Console.WriteLine(i);
+            // }
+
+            int i = 6 / 2;
+            Console.WriteLine(i);
+            Console.ReadLine();
+
         }
     }
     public class TreeNode
