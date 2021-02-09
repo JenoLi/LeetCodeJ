@@ -36,11 +36,35 @@ namespace First
             // {
             //     Console.WriteLine(i);
             // }
-
-            int i = 6 / 2;
-            Console.WriteLine(i);
-            Console.ReadLine();
-
+            string _str = "aab";
+            int _startindex = 0;
+            for (int i = _startindex; i < _str.Length; i++)
+            {
+                // Console.WriteLine("1:");
+                bool ispalindrome = isPalindrome(_str, _startindex, i);
+                // Console.WriteLine("2:");
+                // if (true)
+                // {
+                //     Console.WriteLine("3:");
+                //     string sub = _str.Substring(i, i-_startindex + 1);
+                //     Console.WriteLine("4:"+i+" "+sub);
+                // }
+                // else
+                // {
+                //     continue;
+                // }
+            }
+        }
+        static bool isPalindrome(string s, int start, int end) {
+            for (int i = start, j = end; i < j; i++, j--) {
+                Console.WriteLine("0:回文判断："+s[i]+" "+s[j]);
+                if (s[i] != s[j]) {
+                    Console.WriteLine("false:");
+                    return false;
+                }
+            }
+            Console.WriteLine("true:");
+            return true;
         }
     }
     public class TreeNode
