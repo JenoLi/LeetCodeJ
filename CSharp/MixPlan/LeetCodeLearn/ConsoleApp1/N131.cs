@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace First
 {
@@ -18,7 +20,7 @@ namespace First
         {
             if (_startindex >= _str.Length)
             {
-                result.Add(subresult);
+                result.Add(new List<string>(subresult));//需要先new再add，否则result为空
                 return;
             }
 
@@ -26,7 +28,7 @@ namespace First
             {
                 if (isPalindrome(_str, _startindex,i))
                 {
-                    string sub = _str.Substring(i, i-_startindex + 1);
+                    string sub = _str.Substring(_startindex, i-_startindex + 1);
                     subresult.Add(sub);
                 }
                 else
