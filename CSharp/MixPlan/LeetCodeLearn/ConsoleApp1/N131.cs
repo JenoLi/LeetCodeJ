@@ -18,9 +18,11 @@ namespace First
 
         private void BackTracking(string _str,int _startindex)
         {
-            if (_startindex >= _str.Length)
+            Console.WriteLine("1");
+            if (_startindex == _str.Length)
             {
                 result.Add(new List<string>(subresult));//需要先new再add，否则result为空
+                Console.WriteLine("1.3");
                 return;
             }
 
@@ -30,12 +32,15 @@ namespace First
                 {
                     string sub = _str.Substring(_startindex, i-_startindex + 1);
                     subresult.Add(sub);
+                    Console.WriteLine("1.1");
                 }
                 else
                 {
+                    Console.WriteLine("1.2");
                     continue;
                 }
                 BackTracking(_str,i+1);
+                Console.WriteLine("2");
                 subresult.RemoveAt(subresult.Count-1);
             }
             

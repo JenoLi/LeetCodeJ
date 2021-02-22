@@ -49,12 +49,16 @@
     <Compile Include="N144TreeNode.cs" />
     <Compile Include="N145.cs" />
     <Compile Include="N209.cs" />
+    <Compile Include="N216.cs" />
     <Compile Include="N253.cs" />
     <Compile Include="N27.cs" />
     <Compile Include="N35.cs" />
+    <Compile Include="N376.cs" />
+    <Compile Include="N455.cs" />
     <Compile Include="N492.cs" />
     <Compile Include="N545.cs" />
     <Compile Include="N59.cs" />
+    <Compile Include="N77.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

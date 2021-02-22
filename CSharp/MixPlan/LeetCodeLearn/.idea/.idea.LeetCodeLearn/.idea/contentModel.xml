@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\HX\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\HX\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_LeetCodeLearn.1155772787.00" t="ExcludeRecursive" />
-    <e p="E:\_Git\LeetCodeJeno\CSharp\MixPlan\LeetCodeLearn" t="IncludeFlat">
+    <e p="C:\Users\Jeno\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jeno\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_LeetCodeLearn.219666073.00" t="ExcludeRecursive" />
+    <e p="E:\_Git\LeetCodeJ\CSharp\MixPlan\LeetCodeLearn" t="IncludeFlat">
       <e p="ConsoleApp1" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -15,12 +15,16 @@
         <e p="N144TreeNode.cs" t="Include" />
         <e p="N145.cs" t="Include" />
         <e p="N209.cs" t="Include" />
+        <e p="N216.cs" t="Include" />
         <e p="N253.cs" t="Include" />
         <e p="N27.cs" t="Include" />
         <e p="N35.cs" t="Include" />
+        <e p="N376.cs" t="Include" />
+        <e p="N455.cs" t="Include" />
         <e p="N492.cs" t="Include" />
         <e p="N545.cs" t="Include" />
         <e p="N59.cs" t="Include" />
+        <e p="N77.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
