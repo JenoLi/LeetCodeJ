@@ -59,6 +59,7 @@
     <Compile Include="N545.cs" />
     <Compile Include="N59.cs" />
     <Compile Include="N77.cs" />
+    <Compile Include="N93.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

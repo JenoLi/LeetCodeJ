@@ -5,37 +5,39 @@ namespace First
 {
     public class N253
     {
-        public static int MinMeetingRooms(int[][] intervals)
+        public int MinMeetingRooms(int[][] intervals)
         {
             //上下车法，计算同时在车上的最大数
-            int maxRoom = 0;
-            int curRoom = 0;
-            int[] meetX=new int[intervals.Length];
-            int[] meetY=new int[intervals.Length];
+            int maxMeeting=0;
+            int curMeeting = 0;
+            int[] startInt=new int[intervals.Length];
+            int[] endInt=new int[intervals.Length];
+            int[] allInt=new int[intervals.Length*2];
             for (int i = 0; i < intervals.Length; i++)
             {
-                meetX[i] = intervals[i][0]*10+2;
-                meetY[i] = intervals[i][1]*10+1;
+                startInt[i] = intervals[i][0] * 10 + 2;
+                endInt[i] = intervals[i][1] * 10 + 1;//把出排在前面，防止同数时先加后减
             }
-            int[] meet=new int[intervals.Length*2];
-            meetX.CopyTo(meet,0);
-            meetY.CopyTo(meet,intervals.Length);
-            Array.Sort(meet);
-            foreach (int time in meet)
+            startInt.CopyTo(allInt,0);
+            endInt.CopyTo(allInt,intervals.Length);
+            Array.Sort(allInt);
+            foreach (int i in allInt)
             {
-                Console.WriteLine("meet:"+time);
-                if (time % 10 == 1)
+                if (i % 10 == 1)//先减后加，因为可以头尾相接
                 {
-                    curRoom --;
+                    curMeeting -= 1;
                 }
                 else
                 {
-                    curRoom ++;
+                    curMeeting += 1;
                 }
-                maxRoom = Math.Max(maxRoom, curRoom);
-            }
 
-            return maxRoom;
+                maxMeeting = Math.Max(maxMeeting, curMeeting);
+            }
+            return maxMeeting;
+
+
+
             // int[] startTimes = new int[intervals.Length];
             // int[] endTimes = new int[intervals.Length];
             // for (int i = 0; i < intervals.Length; i++)
