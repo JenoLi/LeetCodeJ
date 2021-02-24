@@ -27,12 +27,12 @@ namespace First
             {
                 if (IsValid(s, startindex, i))
                 {
-                    s=s.Insert(i + 1, ".");//TODO .的加入和去除位置不对
-                    Console.WriteLine("s:"+s);
+                    s=s.Insert(i + 1, ".");
                     pointnum++;
                     BackTracking(s,i+2,pointnum);
                     pointnum--;
-                    s.Remove(i + 1, 1);
+                    s=s.Remove(i + 1, 1);
+                    // s=s.Remove(s.LastIndexOf('.'),1);//同理
                 }
                 else
                 {
@@ -48,22 +48,19 @@ namespace First
             if (s[startindex] == '0' && startindex != endindex)
                 return false;
             int num = 0;
-            for (int i = startindex; i < endindex; i++)
+            for (int i = startindex; i <= endindex; i++)//注意点：左右闭合区间
             {
                 if (s[i] > '9' || s[i] < '0')
                 {
                     return false;
                 }
-
                 num = num * 10 + (s[i] - '0');
                 if (num > 255)
                 {
                     return false;
                 }
             }
-
             return true;
         }
-        
     }
 }
