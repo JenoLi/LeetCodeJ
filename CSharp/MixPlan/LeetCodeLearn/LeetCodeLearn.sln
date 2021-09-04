@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First", "ConsoleApp1\First.csproj", "{E9B6AFFD-60BD-42DC-B90E-4646FA5DC7C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Second2021Q3", "Second2021Q3\Second2021Q3.csproj", "{91CB5E87-C1C7-4470-B126-76585A06EC92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Second2021", "Second2021\Second2021.csproj", "{91CB5E87-C1C7-4470-B126-76585A06EC92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
