@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -14,6 +15,7 @@ namespace First
             {
                 int size = queue.Count;
                 List<int> templist=new List<int>();
+                Console.WriteLine("size:"+size);
                 for (int i = 0; i < size; i++)
                 {
                     TreeNode node = queue.Dequeue();

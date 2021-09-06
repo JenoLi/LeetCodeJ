@@ -10,19 +10,19 @@ namespace Second2021
         public IList<int> PreorderTraversal(TreeNode node)
         {
             List<int> res = new List<int>();
-            FuncPreorder(res,node);
+            FuncPreorder(res, node);
             return res;
         }
 
-        public void FuncPreorder(List<int> res,TreeNode node)
+        public void FuncPreorder(List<int> res, TreeNode node)
         {
             if (node == null) return;
             res.Add(node.val);
-            FuncPreorder(res,node.left);
-            FuncPreorder(res,node.right);
+            FuncPreorder(res, node.left);
+            FuncPreorder(res, node.right);
         }
 
-        //迭代：栈+标记  前序中左右：入栈顺序 右左中
+        //迭代：栈+标记  入栈顺序：前序：右左中
         public IList<int> PreorderInteration(TreeNode node)
         {
             List<int> res = new List<int>();
@@ -31,26 +31,44 @@ namespace Second2021
             {
                 st.Push(node);
             }
-            while (st.Count>0)
+            while (st.Count > 0)
             {
                 TreeNode tempNode = st.Peek();
                 if (tempNode != null)
                 {
-                    Console.Write("弹出："+st.Peek().val);
                     st.Pop();
-                    if(tempNode.right!=null) st.Push(tempNode.right);
-                    if(tempNode.left!=null) st.Push(tempNode.left);
+                    if (tempNode.right != null) st.Push(tempNode.right);
+                    if (tempNode.left != null) st.Push(tempNode.left);
                     st.Push(tempNode);
                     st.Push(null);
                 }
                 else
                 {
-                    st.Pop();//弹出标记null
+                    st.Pop();
                     tempNode = st.Pop();
                     res.Add(tempNode.val);
                 }
             }
             return res;
+        }
+    }
+    
+    //中序
+    public class N145
+    {
+        public IList<int> InorderTraversal(TreeNode node)
+        {
+            List<int> res = new List<int>();
+            Inorder(res, node);
+            return res;
+        }
+
+        public void Inorder(List<int> _res, TreeNode _node)
+        {
+            if (_node == null) return;
+            Inorder(_res, _node.left);
+            Inorder(_res, _node.right);
+            _res.Add(_node.val);
         }
     }
     
@@ -64,39 +82,45 @@ namespace Second2021
             return res;
         }
 
-        public void Postorder(List<int> res,TreeNode node)
+        public void Postorder(List<int> res, TreeNode node)
         {
-            if(node==null) return;
-            Postorder(res,node.right);
+            if (node == null) return;
+            Postorder(res, node.right);
             res.Add(node.val);
-            Postorder(res,node.left);
+            Postorder(res, node.left);
         }
-        
-        
-        
     }
-    
-    //中序
-    public class N145
-    {
-        public IList<int> InorderTraversal(TreeNode node)
-        {
-            List<int> res = new List<int>();
-            Inorder(res,node);
-            return res;
-        }
 
-        public void Inorder(List<int> _res, TreeNode _node)
-        {
-            if(_node==null) return;
-            Inorder(_res,_node.left);
-            Inorder(_res,_node.right);
-            _res.Add(_node.val);
-        }
-        
-    }
-    
-    
+    // public class N102
+    // {
+    //     //层序遍历
+    //     public IList<List<int>> LevelOrder(TreeNode node)
+    //     {
+    //         List<List<int>> res = new List<List<int>>();
+    //         Queue<TreeNode> queue = new Queue<TreeNode>();
+    //         if (node != null)
+    //         {
+    //             queue.Enqueue(node);
+    //         }
+    //
+    //         while (queue.Count>0)
+    //         {
+    //             int size = queue.Count;
+    //             List<int> tempRes = new List<int>();
+    //             Console.WriteLine("size:"+size);
+    //             for (int i = 0; i < size; i++)
+    //             {
+    //                 TreeNode tempNode = queue.Dequeue();
+    //                 if(tempNode!=null) tempRes.Add(tempNode.val);
+    //                 Console.WriteLine("val:"+tempNode.val);
+    //                 if(tempNode.left!=null) queue.Enqueue(tempNode.left);
+    //                 if(tempNode.right!=null) queue.Enqueue(tempNode.right);
+    //             }
+    //             res.Add(tempRes);
+    //         }
+    //         return res;
+    //     }
+    // }
 
-    
+
 }
