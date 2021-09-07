@@ -89,38 +89,34 @@ namespace Second2021
             res.Add(node.val);
             Postorder(res, node.left);
         }
+
+        //后序左右中  入栈顺序：中右左
+        public IList<int> PostorderInteration(TreeNode root)
+        {
+            List<int> res = new List<int>();
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            if(root!=null) stack.Push(root);
+            while (stack.Count>0)
+            {
+                TreeNode node = stack.Peek();
+                if (node != null)
+                {
+                    stack.Pop();
+                    stack.Push(node);
+                    stack.Push(null);
+                    if(node.right!=null) stack.Push(node.right);
+                    if(node.left!=null) stack.Push(node.left);
+                }
+                else
+                {
+                    stack.Pop();
+                    res.Add(stack.Pop().val);
+                }
+            }
+
+            return res;
+        }
+
+
     }
-
-    // public class N102
-    // {
-    //     //层序遍历
-    //     public IList<List<int>> LevelOrder(TreeNode node)
-    //     {
-    //         List<List<int>> res = new List<List<int>>();
-    //         Queue<TreeNode> queue = new Queue<TreeNode>();
-    //         if (node != null)
-    //         {
-    //             queue.Enqueue(node);
-    //         }
-    //
-    //         while (queue.Count>0)
-    //         {
-    //             int size = queue.Count;
-    //             List<int> tempRes = new List<int>();
-    //             Console.WriteLine("size:"+size);
-    //             for (int i = 0; i < size; i++)
-    //             {
-    //                 TreeNode tempNode = queue.Dequeue();
-    //                 if(tempNode!=null) tempRes.Add(tempNode.val);
-    //                 Console.WriteLine("val:"+tempNode.val);
-    //                 if(tempNode.left!=null) queue.Enqueue(tempNode.left);
-    //                 if(tempNode.right!=null) queue.Enqueue(tempNode.right);
-    //             }
-    //             res.Add(tempRes);
-    //         }
-    //         return res;
-    //     }
-    // }
-
-
 }

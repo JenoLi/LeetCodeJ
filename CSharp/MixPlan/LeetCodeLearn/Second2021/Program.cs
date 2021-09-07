@@ -24,6 +24,15 @@ namespace Second2021
             // N144 n144 = new N144();
             // List<int> res =(List<int>)n144.PreorderTraversal(n0);
             // List<int> res =(List<int>)n144.PreorderInteration(n0);
+            Console.WriteLine("\n Postorder--");
+            N94 n94 = new N94();
+            List<int> res =(List<int>)n94.PostorderInteration(n0);
+            foreach (int i in res)
+            {
+                Console.Write(i+" ");
+            }
+            
+            
             
             // Console.WriteLine("层序遍历 LevelOrder");
             // N102 n102 = new N102();
