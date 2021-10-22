@@ -10,22 +10,45 @@ namespace Second2021.Tree
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
+        // public int MaxDepth(TreeNode root)
+        // {
+        //     Console.WriteLine($"MaxDepth");
+        //     int depth = 0;
+        //     Queue<TreeNode> queue = new Queue<TreeNode>();
+        //     if (root == null) return depth;
+        //     queue.Enqueue(root);
+        //     while (queue.Count>0)
+        //     {
+        //         depth++;
+        //         int size = queue.Count;
+        //         for (int i = 0; i < size; i++)
+        //         {
+        //             TreeNode node = queue.Dequeue();
+        //             if(node.left!=null) queue.Enqueue(node.left);
+        //             if(node.right!=null) queue.Enqueue(node.right);
+        //         }
+        //     }
+        //     return depth;
+        // }
         public int MaxDepth(TreeNode root)
         {
-            Console.WriteLine($"MaxDepth");
             int depth = 0;
+            if (root == null)
+            {
+                return 0;
+            }
+
             Queue<TreeNode> queue = new Queue<TreeNode>();
-            if (root == null) return depth;
             queue.Enqueue(root);
-            while (queue.Count>0)
+            while (queue.Count > 0)
             {
                 depth++;
                 int size = queue.Count;
-                for (int i = 0; i < size; i++)
+                for (int i = 0; i < size; i++)//遍历这一层的size个，把下一层加入队列 然后进行下一次循环
                 {
-                    TreeNode node = queue.Dequeue();
-                    if(node.left!=null) queue.Enqueue(node.left);
-                    if(node.right!=null) queue.Enqueue(node.right);
+                    TreeNode temp = queue.Dequeue();
+                    if (temp.left != null) queue.Enqueue(temp.left);
+                    if (temp.right != null) queue.Enqueue(temp.right);
                 }
             }
             return depth;

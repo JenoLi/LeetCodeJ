@@ -24,9 +24,9 @@ namespace Second2021
             // int depth = n104.MaxDepth(n0);
             // Console.WriteLine($"MaxDepth:{depth}");
             
-            N111 n111 = new N111();
-            int minDepth = n111.MinDepth(n0);
-            Console.WriteLine($"MinDepth:{minDepth}");
+            // N111 n111 = new N111();
+            // int minDepth = n111.MinDepth(n0);
+            // Console.WriteLine($"MinDepth:{minDepth}");
 
             //前序5412678 中序1425768 后序1247865
             // Console.WriteLine("\n Preorder--");
@@ -46,15 +46,20 @@ namespace Second2021
             // Console.WriteLine("层序遍历 LevelOrder");
             // N102 n102 = new N102();
             // IList<IList<int>> res =n102.LevelOrder(n0);
-            //
-            // foreach (List<int> i in res)
-            // {
-            //     // Console.WriteLine(i+"----");
-            //     for (int j = 0; j < i.Count; j++)
-            //     {
-            //         Console.Write(i[j]+" ");
-            //     }
-            // }
+            
+            Console.WriteLine("反向层序遍历 LevelOrderBottom");
+            N107 n107 = new N107();
+            IList<IList<int>> res =n107.LevelOrderBottom(n0);
+            
+            foreach (List<int> i in res)
+            {
+                // Console.WriteLine(i+"----");
+                for (int j = 0; j < i.Count; j++)
+                {
+                    Console.Write(i[j]+" ");
+                }
+                Console.WriteLine();
+            }
 
             //144
             // N144TreeNode n144TreeNode= new N144TreeNode();
