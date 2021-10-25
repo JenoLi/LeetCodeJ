@@ -47,23 +47,33 @@ namespace Second2021
             // N102 n102 = new N102();
             // IList<IList<int>> res =n102.LevelOrder(n0);
             
-            Console.WriteLine("反向层序遍历 LevelOrderBottom");
-            N107 n107 = new N107();
-            IList<IList<int>> res =n107.LevelOrderBottom(n0);
-            
-            foreach (List<int> i in res)
-            {
-                // Console.WriteLine(i+"----");
-                for (int j = 0; j < i.Count; j++)
-                {
-                    Console.Write(i[j]+" ");
-                }
-                Console.WriteLine();
-            }
+            // Console.WriteLine("反向层序遍历 LevelOrderBottom");
+            // N107 n107 = new N107();
+            // IList<IList<int>> res =n107.LevelOrderBottom(n0);
+            //
+            // foreach (List<int> i in res)
+            // {
+            //     // Console.WriteLine(i+"----");
+            //     for (int j = 0; j < i.Count; j++)
+            //     {
+            //         Console.Write(i[j]+" ");
+            //     }
+            //     Console.WriteLine();
+            // }
 
             //144
             // N144TreeNode n144TreeNode= new N144TreeNode();
             // List<int> res= (List<int>)n144TreeNode.PreorderTraversal(n0);
+            
+            Console.WriteLine("RightSideView");
+            N199 n199 = new N199();
+            IList<int> res =n199.RightSideView(n0);
+            
+            foreach (int i in res)
+            {
+                // Console.WriteLine(i+"----");
+                Console.Write(i+" ");
+            }
 
         }
     }
