@@ -65,15 +65,19 @@ namespace Second2021
             // N144TreeNode n144TreeNode= new N144TreeNode();
             // List<int> res= (List<int>)n144TreeNode.PreorderTraversal(n0);
             
-            Console.WriteLine("RightSideView");
-            N199 n199 = new N199();
-            IList<int> res =n199.RightSideView(n0);
+            // Console.WriteLine("RightSideView");
+            // N199 n199 = new N199();
+            // IList<int> res =n199.RightSideView(n0);
+            //
+            // foreach (int i in res)
+            // {
+            //     // Console.WriteLine(i+"----");
+            //     Console.Write(i+" ");
+            // }
+
+            // N226 n226 = new N226();
+            // TreeNode res= n226.InvertTree(n0);
             
-            foreach (int i in res)
-            {
-                // Console.WriteLine(i+"----");
-                Console.Write(i+" ");
-            }
 
         }
     }
