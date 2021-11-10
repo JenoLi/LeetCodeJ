@@ -19,7 +19,7 @@ namespace Second2021.Tree
                     TreeNode node = queue.Dequeue();
                     if(node.left!=null) queue.Enqueue(node.left);
                     if(node.right!=null) queue.Enqueue(node.right);
-                    if (node.left == null && node.right == null)
+                    if (node.left == null && node.right == null)//无子节点时 得到最小深度
                     {
                         return depth;
                     }

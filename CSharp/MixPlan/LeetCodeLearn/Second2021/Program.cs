@@ -17,12 +17,13 @@ namespace Second2021
             TreeNode n3=new TreeNode(1,null,null);
             TreeNode n4=new TreeNode(2,null,null);
             TreeNode n1=new TreeNode(4,n3,n4);
-            TreeNode n2=new TreeNode(6,n5,n6);
+            // TreeNode n2=new TreeNode(6,n5,n6);
+            TreeNode n2=new TreeNode(6,n5,null);
             TreeNode n0=new TreeNode(5,n1,n2);
 
-            N104 n104 = new N104();
-            int depth = n104.MaxDepth(n0);
-            Console.WriteLine($"MaxDepth:{depth}");
+            // N104 n104 = new N104();
+            // int depth = n104.MaxDepth(n0);
+            // Console.WriteLine($"MaxDepth:{depth}");
             
             // N111 n111 = new N111();
             // int minDepth = n111.MinDepth(n0);
@@ -77,8 +78,10 @@ namespace Second2021
 
             // N226 n226 = new N226();
             // TreeNode res= n226.InvertTree(n0);
-            
 
+            N222 n222 = new N222();
+            int res = n222.CountNodes(n0);
+            Console.WriteLine("res::"+res);
         }
     }
     
