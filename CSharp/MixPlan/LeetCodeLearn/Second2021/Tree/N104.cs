@@ -32,26 +32,27 @@ namespace Second2021.Tree
         // }
         public int MaxDepth(TreeNode root)
         {
+            if (root == null) return 0;
             int depth = 0;
-            if (root == null)
-            {
-                return 0;
-            }
-
             Queue<TreeNode> queue = new Queue<TreeNode>();
             queue.Enqueue(root);
-            while (queue.Count > 0)
+            while (queue.Count>0)
             {
                 depth++;
                 int size = queue.Count;
-                for (int i = 0; i < size; i++)//遍历这一层的size个，把下一层加入队列 然后进行下一次循环
+                for (int i = 0; i < size; i++)
                 {
                     TreeNode temp = queue.Dequeue();
-                    if (temp.left != null) queue.Enqueue(temp.left);
-                    if (temp.right != null) queue.Enqueue(temp.right);
+                    if(temp.left!=null) queue.Enqueue(temp.left);
+                    if(temp.right!=null) queue.Enqueue(temp.right);
                 }
+
             }
             return depth;
         }
+        
+        
+        
+        
     }
 }

@@ -20,9 +20,9 @@ namespace Second2021
             TreeNode n2=new TreeNode(6,n5,n6);
             TreeNode n0=new TreeNode(5,n1,n2);
 
-            // N104 n104 = new N104();
-            // int depth = n104.MaxDepth(n0);
-            // Console.WriteLine($"MaxDepth:{depth}");
+            N104 n104 = new N104();
+            int depth = n104.MaxDepth(n0);
+            Console.WriteLine($"MaxDepth:{depth}");
             
             // N111 n111 = new N111();
             // int minDepth = n111.MinDepth(n0);
