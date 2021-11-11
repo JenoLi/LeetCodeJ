@@ -54,7 +54,7 @@ namespace Second2021
     }
     
     //中序
-    public class N145
+    public class N94
     {
         public IList<int> InorderTraversal(TreeNode node)
         {
@@ -70,10 +70,35 @@ namespace Second2021
             Inorder(_res, _node.right);
             _res.Add(_node.val);
         }
+
+        public IList<int> InorderInteration(TreeNode root)
+        {
+            List<int> res = new List<int>();
+            if (root == null) return res;
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            stack.Push(root);
+            while (stack.Count>0)
+            {
+                TreeNode node = stack.Pop();
+                if (node != null)
+                {
+                    if(node.right!=null) stack.Push(node.right);
+                    stack.Push(node);
+                    stack.Push(null);
+                    if(node.left!=null) stack.Push(node.left);
+                }
+                else
+                {
+                    res.Add(stack.Pop().val);
+                }
+            }
+
+            return res;
+        }
     }
     
     //后序 
-    public class N94
+    public class N145
     {
         public IList<int> PostorderTraversal(TreeNode node)
         {
@@ -94,14 +119,14 @@ namespace Second2021
         public IList<int> PostorderInteration(TreeNode root)
         {
             List<int> res = new List<int>();
+            if (root == null) return res;
             Stack<TreeNode> stack = new Stack<TreeNode>();
-            if(root!=null) stack.Push(root);
+            stack.Push(root);
             while (stack.Count>0)
             {
-                TreeNode node = stack.Peek();
+                TreeNode node = stack.Pop();
                 if (node != null)
                 {
-                    stack.Pop();
                     stack.Push(node);
                     stack.Push(null);
                     if(node.right!=null) stack.Push(node.right);
@@ -109,14 +134,11 @@ namespace Second2021
                 }
                 else
                 {
-                    stack.Pop();
                     res.Add(stack.Pop().val);
                 }
             }
 
             return res;
         }
-
-
     }
 }
