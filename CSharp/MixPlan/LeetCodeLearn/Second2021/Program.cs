@@ -79,9 +79,18 @@ namespace Second2021
             // N226 n226 = new N226();
             // TreeNode res= n226.InvertTree(n0);
 
-            N222 n222 = new N222();
-            int res = n222.CountNodes(n0);
-            Console.WriteLine("res::"+res);
+            // N222 n222 = new N222();
+            // int res = n222.CountNodes(n0);
+            // Console.WriteLine("res::"+res);
+
+            N257 n257 = new N257();
+            List<string> res= (List<string>)n257.BinaryTreePaths(n0);
+            foreach (string i in res)
+            {
+                // Console.WriteLine(i+"----");
+                Console.Write(i+" ");
+            }
+
         }
     }
     
@@ -96,6 +105,22 @@ namespace Second2021
             this.val = val;
             this.left = left;
             this.right = right;
+        }
+    }
+
+    public class FuncRoot
+    {
+        public void Func1()
+        {
+            Console.WriteLine("func1");
+        }
+    }
+
+    public static class FuncExtension
+    {
+        public static void FunE1(this FuncRoot funcRoot)
+        {
+            Console.WriteLine("func E1");
         }
     }
 }

@@ -49,6 +49,7 @@
         <Compile Include="Tree\N199.cs" />
         <Compile Include="Tree\N222.cs" />
         <Compile Include="Tree\N226.cs" />
+        <Compile Include="Tree\N257.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
