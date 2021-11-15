@@ -83,13 +83,21 @@ namespace Second2021
             // int res = n222.CountNodes(n0);
             // Console.WriteLine("res::"+res);
 
-            N257 n257 = new N257();
-            List<string> res= (List<string>)n257.BinaryTreePaths(n0);
-            foreach (string i in res)
-            {
-                // Console.WriteLine(i+"----");
-                Console.Write(i+" ");
-            }
+            // N257 n257 = new N257();
+            // List<string> res= (List<string>)n257.BinaryTreePaths(n0);
+            // foreach (string i in res)
+            // {
+            //     // Console.WriteLine(i+"----");
+            //     Console.Write(i+" ");
+            // }
+
+            // N404 n404 = new N404();
+            // int res = n404.SumOfLeftLeaves(n0);
+            // Console.WriteLine("n404 res:"+res);
+
+            N513 n513 = new N513();
+            int res = n513.FindBottomLeftValue(n0);
+            Console.WriteLine("n513 res:"+res);
 
         }
     }

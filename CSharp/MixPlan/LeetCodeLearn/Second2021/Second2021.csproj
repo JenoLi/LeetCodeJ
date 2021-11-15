@@ -51,6 +51,8 @@
         <Compile Include="Tree\N222.cs" />
         <Compile Include="Tree\N226.cs" />
         <Compile Include="Tree\N257.cs" />
+        <Compile Include="Tree\N404.cs" />
+        <Compile Include="Tree\N513.cs" />
         <Compile Include="Tree\N572.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
