@@ -95,9 +95,13 @@ namespace Second2021
             // int res = n404.SumOfLeftLeaves(n0);
             // Console.WriteLine("n404 res:"+res);
 
-            N513 n513 = new N513();
-            int res = n513.FindBottomLeftValue(n0);
-            Console.WriteLine("n513 res:"+res);
+            // N513 n513 = new N513();
+            // int res = n513.FindBottomLeftValue(n0);
+            // Console.WriteLine("n513 res:"+res);
+
+            N112 n112 = new N112();
+            bool res = n112.HasPathSum(n0, 10);
+            Console.WriteLine("n112 res:"+res);
 
         }
     }
