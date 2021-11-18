@@ -99,10 +99,20 @@ namespace Second2021
             // int res = n513.FindBottomLeftValue(n0);
             // Console.WriteLine("n513 res:"+res);
 
-            N112 n112 = new N112();
-            bool res = n112.HasPathSum(n0, 10);
-            Console.WriteLine("n112 res:"+res);
+            // N112 n112 = new N112();
+            // bool res = n112.HasPathSum(n0, 10);
+            // Console.WriteLine("n112 res:"+res);
 
+            // N700 n700 = new N700();
+            // TreeNode resNode = n700.SearchBST(n0, 1);
+            // Console.WriteLine("n700:"+ (resNode==null?999:resNode.val));
+
+            // N98 n98 = new N98();
+            // Console.WriteLine("n98:"+n98.IsValidBST(n0));
+
+            N530 n530 = new N530();
+            Console.WriteLine("N530："+n530.GetMinimumDifference(n0));
+            
         }
     }
     
