@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Second2021.Sort;
 using Second2021.Tree;
 
 namespace Second2021
@@ -110,9 +111,12 @@ namespace Second2021
             // N98 n98 = new N98();
             // Console.WriteLine("n98:"+n98.IsValidBST(n0));
 
-            N530 n530 = new N530();
-            Console.WriteLine("N530："+n530.GetMinimumDifference(n0));
-            
+            // N530 n530 = new N530();
+            // Console.WriteLine("N530："+n530.GetMinimumDifference(n0));
+
+            int[] a={30,40,60,10,20,50,70};
+            QuickSort sort = new QuickSort();
+            sort.QuickSortFun(a);
         }
     }
     
