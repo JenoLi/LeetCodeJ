@@ -114,9 +114,19 @@ namespace Second2021
             // N530 n530 = new N530();
             // Console.WriteLine("N530："+n530.GetMinimumDifference(n0));
 
+            // int[] a={30,40,60,10,20,50,70};
+            // QuickSort sort = new QuickSort();
+            // sort.QuickSortFun(a);
+            
             int[] a={30,40,60,10,20,50,70};
-            QuickSort sort = new QuickSort();
-            sort.QuickSortFun(a);
+            // MergeSort sort = new MergeSort();
+            // sort.MergeSortFun(a);
+            Review review = new Review();
+            review.MergeSort(a);
+            foreach (int i in a)
+            {
+                Console.Write(i+" ");
+            }
         }
     }
     
