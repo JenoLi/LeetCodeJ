@@ -45,6 +45,7 @@
         <Compile Include="Sort\MergeSort.cs" />
         <Compile Include="Sort\QuickSort.cs" />
         <Compile Include="Sort\Review.cs" />
+        <Compile Include="Sort\SelectionSort.cs" />
         <Compile Include="Tools.cs" />
         <Compile Include="Tree\N100.cs" />
         <Compile Include="Tree\N101.cs" />

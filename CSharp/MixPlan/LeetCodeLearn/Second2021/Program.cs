@@ -121,8 +121,12 @@ namespace Second2021
             int[] a={30,40,60,10,20,50,70};
             // MergeSort sort = new MergeSort();
             // sort.MergeSortFun(a);
-            Review review = new Review();
-            review.MergeSort(a);
+            // Review review = new Review();
+            // review.MergeSort(a);
+
+            SelectionSort selectionSort = new SelectionSort();
+            selectionSort.SelectionSortFun(a);
+            
             foreach (int i in a)
             {
                 Console.Write(i+" ");
