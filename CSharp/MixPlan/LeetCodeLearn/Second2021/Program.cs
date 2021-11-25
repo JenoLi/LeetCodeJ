@@ -124,9 +124,11 @@ namespace Second2021
             // Review review = new Review();
             // review.MergeSort(a);
 
-            SelectionSort selectionSort = new SelectionSort();
-            selectionSort.SelectionSortFun(a);
-            
+            // SelectionSort selectionSort = new SelectionSort();
+            // selectionSort.SelectionSortFun(a);
+
+            BubbleSort bubbleSort = new BubbleSort();
+            bubbleSort.BubbleSortFun(a);
             foreach (int i in a)
             {
                 Console.Write(i+" ");
