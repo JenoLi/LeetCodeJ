@@ -127,13 +127,62 @@ namespace Second2021
             // SelectionSort selectionSort = new SelectionSort();
             // selectionSort.SelectionSortFun(a);
 
-            BubbleSort bubbleSort = new BubbleSort();
-            bubbleSort.BubbleSortFun(a);
-            foreach (int i in a)
-            {
-                Console.Write(i+" ");
-            }
+            // BubbleSort bubbleSort = new BubbleSort();
+            // bubbleSort.BubbleSortFun(a);
+            // foreach (int i in a)
+            // {
+            //     Console.Write(i+" ");
+            // }
+            ReviewTree();
         }
+
+        public static void ReviewTree()
+        {
+            //         5
+            //     4       6
+            // 1      2  //7     8
+            //前序5412678 中序1425768 后序1247865
+
+            TreeNode n5=new TreeNode(7,null,null);
+            TreeNode n6=new TreeNode(8,null,null);
+            TreeNode n3=new TreeNode(1,null,null);
+            TreeNode n4=new TreeNode(2,null,null);
+            TreeNode n1=new TreeNode(4,n3,n4);
+            // TreeNode n2=new TreeNode(6,n5,n6);
+            TreeNode n2=new TreeNode(6,n5,null);
+            TreeNode n0=new TreeNode(5,n1,n2);
+
+
+            RTree rTree = new RTree();
+            // List<int> res = new List<int>();
+             // res=rTree.Preorder01(n0);
+             // foreach (int re in res)
+             // {
+             //     Console.Write(re+" ");
+             // }
+             // List<List<int>> res= rTree.LevelOrder(n0);
+             
+             // IList<IList<int>> res= rTree.LevelOrderBottom(n0);
+             // foreach (List<int> i in res)
+             // {
+             //     foreach (int i1 in i)
+             //     {
+             //         Console.Write(i1+" ");
+             //     }
+             //     Console.WriteLine("-----");
+             // }
+
+             // IList<string> res= rTree.BinaryTreePaths(n0);
+             // for (int i = 0; i < res.Count; i++)
+             // {
+             //     Console.WriteLine(res[i]);
+             // }
+
+             int sum = rTree.SumOfLeftLeaves(n0);
+             Console.WriteLine("sum:"+sum);
+
+        }
+        
     }
     
     public class TreeNode
