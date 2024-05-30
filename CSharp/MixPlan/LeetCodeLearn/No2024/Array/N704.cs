@@ -6,21 +6,21 @@ namespace No2023.Array
     {
         public int Search(int[] nums, int target)
         {
-            int left = 0;
-            int right = nums.Length - 1;
-            while (left<=right)
+            int indexL = 0;
+            int indexR = nums.Length-1;
+            while (indexL<=indexR)
             {
-                int mid = (left + right) / 2;
-                if (nums[mid] > target)
+                int indexM = (indexL + indexR) / 2;
+                if (target>nums[indexM])
                 {
-                    right = nums[mid - 1];
-                }else if (nums[mid] < target)
+                    indexL = indexM+1;
+                }else if (target < nums[indexM])
                 {
-                    left = nums[mid + 1];
+                    indexR = indexM-1;
                 }
                 else
                 {
-                    return mid;
+                    return indexM;
                 }
             }
             return -1;

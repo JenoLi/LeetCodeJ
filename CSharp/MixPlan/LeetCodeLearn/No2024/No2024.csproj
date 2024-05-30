@@ -8,11 +8,12 @@
         <ProjectGuid>{9989DE9F-CE2D-47C3-9FCF-8AC8D072DF08}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>No2023</RootNamespace>
+        <RootNamespace>No2024</RootNamespace>
         <AssemblyName>No2024</AssemblyName>
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +53,7 @@
         <Compile Include="Tree\N111.cs" />
         <Compile Include="Tree\N144.cs" />
         <Compile Include="Tree\N199.cs" />
+        <Compile Include="Tree\TreeNode.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

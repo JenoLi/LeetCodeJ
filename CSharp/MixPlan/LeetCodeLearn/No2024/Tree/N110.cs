@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace No2023.Tree
+namespace No2024.Tree
 {
     public class N110
     {

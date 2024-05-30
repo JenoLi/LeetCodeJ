@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Security.Policy;
 
-namespace No2023.Tree
+namespace No2024.Tree
 {
     public class N144
     {
