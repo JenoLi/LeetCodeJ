@@ -50,6 +50,14 @@
         <Compile Include="DynamicProgramming\N509.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="StackQueue\N1047.cs" />
+        <Compile Include="StackQueue\N225.cs" />
+        <Compile Include="StackQueue\N232.cs" />
+        <Compile Include="StackQueue\N347.cs" />
+        <Compile Include="TreeNo2\N144.cs" />
+        <Compile Include="TreeNo2\N145.cs" />
+        <Compile Include="TreeNo2\N94.cs" />
+        <Compile Include="TreeNo2\TreeNode.cs" />
         <Compile Include="Tree\N101.cs" />
         <Compile Include="Tree\N102.cs" />
         <Compile Include="Tree\N104.cs" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using No2024.StackQueue;
 
 namespace No2024
 {
@@ -6,10 +7,14 @@ namespace No2024
     {
         public static void Main(string[] args)
         {
-
+            MyStack myStack = new MyStack();
+            myStack.Push(1);
+            myStack.Push(2);
+            Console.WriteLine(myStack.Top());
+            Console.WriteLine(myStack.Pop());
             #region Array
 
-            test_arr();
+            // test_arr();
 
             #endregion
 
