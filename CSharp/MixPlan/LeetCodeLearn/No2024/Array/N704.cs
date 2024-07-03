@@ -1,4 +1,3 @@
-using System.ComponentModel;
 
 namespace No2023.Array
 {

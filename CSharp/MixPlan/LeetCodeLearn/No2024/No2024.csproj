@@ -47,6 +47,7 @@
         <Compile Include="Array\N27.cs" />
         <Compile Include="Array\N349.cs" />
         <Compile Include="Array\N704.cs" />
+    <Compile Include="Array\N977.cs" />
         <Compile Include="DynamicProgramming\N509.cs" />
     <Compile Include="DynamicProgramming\N62.cs" />
     <Compile Include="DynamicProgramming\N70.cs" />
@@ -57,6 +58,7 @@
         <Compile Include="StackQueue\N225.cs" />
         <Compile Include="StackQueue\N232.cs" />
         <Compile Include="StackQueue\N347.cs" />
+    <Compile Include="TreeNo2\N02.cs" />
         <Compile Include="TreeNo2\N144.cs" />
         <Compile Include="TreeNo2\N145.cs" />
         <Compile Include="TreeNo2\N94.cs" />
