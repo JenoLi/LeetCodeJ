@@ -36,6 +36,8 @@ namespace No2024.StackQueue
             //     res[i] = pq.Dequeue();
             // }
             // return res;
+
+            return new []{1};
         }
     }
 }

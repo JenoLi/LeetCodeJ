@@ -1,4 +1,5 @@
 ﻿using System;
+using No2023.DynamicProgramming;
 using No2024.StackQueue;
 
 namespace No2024
@@ -7,11 +8,11 @@ namespace No2024
     {
         public static void Main(string[] args)
         {
-            MyStack myStack = new MyStack();
-            myStack.Push(1);
-            myStack.Push(2);
-            Console.WriteLine(myStack.Top());
-            Console.WriteLine(myStack.Pop());
+            // MyStack myStack = new MyStack();
+            // myStack.Push(1);
+            // myStack.Push(2);
+            // Console.WriteLine(myStack.Top());
+            // Console.WriteLine(myStack.Pop());
             #region Array
 
             // test_arr();
@@ -50,6 +51,11 @@ namespace No2024
             //     Console.Write(i);
             // }
             // #endregion
+
+            
+            N1143 n1143 = new N1143();
+           int res= n1143.LongestCommonSubsequence("abc","bc");
+           Console.WriteLine(res);
         }
 
         static void test_arr()
